@@ -1,23 +1,24 @@
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router,Routes,Route } from "react-router-dom";
 import Sidebar from "./components/Sidebar"
- 
+
+
 
 function App(){
        
   return(
-      <div className="flex min-h-screen bg-green-50">
-        <Sidebar />
-        <main className="flex-1 p-8 text-left">
-          <Routes>
-            <Route path="/" element={<h1 className="text-3xl font-bold text-green-950">Dashboard</h1>} />
-            <Route path="/patients" element={<h1 className="text-3xl font-bold text-green-950">Patients</h1>} />
-            <Route path="/doctors" element={<h1 className="text-3xl font-bold text-green-950">Doctors</h1>} />
-          </Routes>
-        </main>
-      </div>
+      <Router>
+          <div className="flex bg-green-50 min-h-screen">
+            <Sidebar />
+          </div>
+
+
+
+      </Router>
+
+
+
 
   );
-
 }
 
 export default App;
