@@ -22,9 +22,7 @@ function App(){
           </Routes>
         </main>
       </div>
-
   );
-
 }
 
 export default App;
