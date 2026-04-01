@@ -1,7 +1,9 @@
 import { Routes, Route } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
 import Header from "./components/Header";
- 
+import Dashboard from "./pages/Dashboard"; 
+import Patients from "./pages/Patients";
+import Doctors from "./pages/Doctors";
 
 function App(){
        
@@ -16,9 +18,9 @@ function App(){
 
 
           <Routes>
-            <Route path="/" element={<h1 className="text-3xl font-bold text-green-950">Dashboard</h1>} />
-            <Route path="/patients" element={<h1 className="text-3xl font-bold text-green-950">Patients</h1>} />
-            <Route path="/doctors" element={<h1 className="text-3xl font-bold text-green-950">Doctors</h1>} />
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/patients" element={<Patients />} />
+            <Route path="/doctors" element={ <Doctors />} />
           </Routes>
         </main>
       </div>
