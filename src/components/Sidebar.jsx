@@ -21,6 +21,16 @@ function Sidebar() {
                 Doctors 
           </Link>
           </li>
+          <li>
+            <Link to="/test-types" className="block hover:bg-green-700 p-2 rounded">
+                Test Types
+          </Link>
+          </li>
+          <li>
+            <Link to="/test-orders" className="block hover:bg-green-700 p-2 rounded">
+                Test Orders
+          </Link>
+          </li>
         </ul>
     </div>
   );
