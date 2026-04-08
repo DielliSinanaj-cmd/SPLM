@@ -8,7 +8,7 @@ import Doctors from "./pages/Doctors";
 function App(){
        
   return(
-      <div className="flex min-h-screen bg-green-50">
+      <div className="flex bg-green-50 min-h-screen bg-green-50">
         <Sidebar />
         <main className="flex-1 p-8 text-left">
                 <div className="flex-1 p-6">
