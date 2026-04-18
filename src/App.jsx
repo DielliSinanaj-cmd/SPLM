@@ -9,6 +9,8 @@ import TestOrder from "./pages/TestOrder";
 import TestTypes from "./pages/TestTypes";
 import Equipment from "./pages/Equipment";
 import Invoices from "./pages/Invoices";
+import Samples from "./pages/Samples";
+import Results from "./pages/Results";
 
 function App(){
   const [testTypes, setTestTypes] = useState([]);
@@ -42,6 +44,8 @@ function App(){
             />
             <Route path="/equipment" element={<Equipment />} />
             <Route path="/invoices" element={<Invoices />} />
+            <Route path="/samples" element={<Samples />} />
+            <Route path="/results" element={<Results />} />
           </Routes>
         </main>
       </div>
