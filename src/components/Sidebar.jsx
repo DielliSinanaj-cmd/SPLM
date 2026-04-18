@@ -31,6 +31,16 @@ function Sidebar() {
                 Test Orders
           </Link>
           </li>
+          <li>
+            <Link to="/equipment" className="block hover:bg-green-700 p-2 rounded">
+                Equipment
+          </Link>
+          </li>
+          <li>
+            <Link to="/invoices" className="block hover:bg-green-700 p-2 rounded">
+                Invoices
+          </Link>
+          </li>
         </ul>
     </div>
   );

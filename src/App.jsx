@@ -7,6 +7,8 @@ import Patients from "./pages/Patients";
 import Doctors from "./pages/Doctors";
 import TestOrder from "./pages/TestOrder";
 import TestTypes from "./pages/TestTypes";
+import Equipment from "./pages/Equipment";
+import Invoices from "./pages/Invoices";
 
 function App(){
   const [testTypes, setTestTypes] = useState([]);
@@ -38,6 +40,8 @@ function App(){
               path="/test-orders"
               element={<TestOrder testTypes={testTypes} />}
             />
+            <Route path="/equipment" element={<Equipment />} />
+            <Route path="/invoices" element={<Invoices />} />
           </Routes>
         </main>
       </div>
